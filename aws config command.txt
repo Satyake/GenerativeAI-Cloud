@@ -1,0 +1,3 @@
+$aws configure
+
+for entering access key , secret and region 
