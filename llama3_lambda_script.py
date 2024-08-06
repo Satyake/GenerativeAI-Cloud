@@ -59,8 +59,8 @@ def lambda_handler(event, context):
 
     if generate_blog:
         current_time=datetime.datetime.now().strftime('%H%M%S')
-        s3_key=f"blog-output/{current_time}.txt",
-        s3_bucket="awsbedrockapp0099",
+        s3_key=f"blog-output/{current_time}.txt"
+        s3_bucket="awsbedrockapp0099"
         s3_uploader(s3_key,s3_bucket,generate_blog)
     else:
         print("Failed to generate blog content")
